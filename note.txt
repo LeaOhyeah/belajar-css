@@ -1,0 +1,155 @@
+==== Pendahuluan ====
+
+
+==== Membuat Project ====
+
+
+==== Pengenalan CSS ====
+css ---
+css adalah bahasa berbasis rule/aturan
+kita akan mendefinisikan rule untuk element html yang kita buat
+membuat rule biasanya dengan menyebutkan nama element atau selector, kurung kurawal buka dan tutup, kemudian rule didalamnya
+rule disebutkan dengan property: value;
+contoh
+h1 {
+    color: red;
+    font-size: 20px;
+} 
+
+
+==== Menambah CSS ====
+terdapat tiga cara,
+inline: di atribut style html
+internal: di tag style pada file html
+external: di file css terpisah dan dipanggil dengan tag link 
+
+==== Comment ====
+terdapat komentar satu baris dan lebih dari satu baris
+
+==== ID ====
+selain memilih element menggunakan selector element, kita bisa menggunakan selector id untuk memberi style pada satu element spesifik
+untuk menggunakan id, tambahkan # diawalnya
+contoh
+#judul{
+    color: red;
+}
+
+==== Class ====
+jika ingin menambahkan style ke beberapa element spesifik, kita dapat menggunakan class
+untuk menggunakan class, tambahkan . diawalnya
+contoh
+.judul{
+    color: red;
+}
+css juga mendukung multiple class, atau satu element html memiliki lebih dari satu class
+ini dilakukan dengan menggunakan spasi sebagai pemisah
+
+==== Selector ====
+sebelumnya kita tau terdapat 3 cara selector atau memilih element yang diberi style
+yaitu tag (type selector), #id (id selector), dan .class (class selector)
+kita bisa membuat sintax untuk beberapa selector dengan dipisahkan tanda koma
+contoh
+h1, h2, #title{
+    color: red;
+}
+
+
+==== Combinator Selector ====
+adalah sesuatu yang menjelaskan relasi antar selector, terdapat 4 yaitu
+- descendant selector (memilih element anak), menggunakan spasi
+contoh div p {color: red;}
+artinya memilih p yang didalam div
+- child selector (memilih hanya element anak pertama), menggunakan >
+contoh div > p {color: red;}
+artinya memilih p yang didalam div dan tidak didalam tag lain lagi
+- adjacent sibling selector (memilih 1 element saudara setelahnya), menggunakan +
+contoh div + p {color: red;}
+artinya memilih 1 p yang ada setelah div dan tidak didalam tag lain lagi
+- general sibling selector (memilih semua element saudara setelahnya), menggunakan ~
+contoh div ~ p {color: red;}
+artinya memilih semua p yang ada setelah div dan tidak didalam tag lain lagi, tapi boleh disamping tag lain
+
+
+==== Attribute Selector ====
+
+
+==== Color ====
+
+
+==== Text ====
+
+
+==== Font ====
+
+
+==== Background ====
+
+
+==== Box Model ====
+
+
+==== Debug dengan Browser ====
+
+
+==== Mix dan Max Size ====
+
+
+==== Border ====
+
+
+==== Outline ====
+
+
+==== Background Image ====
+
+
+==== Opacity ====
+
+
+==== Value dan Unit ====
+
+
+==== Writing Mode ====
+
+
+==== Overflow ====
+
+
+==== Pseudo Elements ====
+
+
+==== Pseudo Classes ====
+
+
+==== Link ====
+
+
+==== List ====
+
+
+==== Table ====
+
+
+==== Form ====
+
+
+==== Content ====
+
+
+==== Counter ====
+
+
+==== Filter ====
+
+
+==== Import ====
+
+
+==== Cascade ====
+
+
+==== Layer ====
+
+
+==== Materi Selanjutnya ====
+

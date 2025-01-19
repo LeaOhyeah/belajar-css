@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+
+        /* descendant */
+        div p {
+            color: red;
+        }
+
+        /* child */
+        div > p {
+            text-transform: uppercase;
+        }
+        
+        /* adjacent sibling */
+        div + p {
+            text-decoration: underline;
+        }
+        
+        /* general sibling */
+        div ~ p {
+            font-size: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Ini tidak dipilih</p>
+    <div>
+        <article>
+            <p>Ini dipilih descendant</p>
+        </article>
+        <p>Ini dipilih descendant dan child</p>
+    </div>
+    <p>Ini dipilih adjancent sibling dan general sibling</p>
+    <h6>tag lain</h6>
+    <p>Ini dipilih general sibling</p>
+</body>
+</html>
