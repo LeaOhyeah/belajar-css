@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+    <style>
+        a[target]{
+            color: red;
+        }
+
+        a[target="_blank"]{
+            color: green;
+        }
+
+        p[title~="belajar"]{
+            color: red;
+        }
+
+        p[title|="belajar"]{
+            color: green;
+        }
+
+        p[title^="program"]{
+            color: rebeccapurple;
+        }
+
+        p[title$="program"]{
+            color: rebeccapurple;
+        }
+
+        p[title*="program"]{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <a href="" target="_blank">Ini masuk</a>
+    <br>
+    <a href="" target="#">Ini gak masuk</a>
+    <br>
+    <a href="" >Ini gak masuk</a>
+
+    <p title="belajar">Belajar</p>
+    <p title="belajarpemrograman">Belajarpemrograman</p>
+    <p title="belajar-pemrograman">Belajar-pemrograman</p>
+    <p title="ini juga belajar">Ini juga belajar</p>
+    <p title="ini belajar juga">Ini belajar juga</p>
+    <p title="ini bukan">Ini bukan</p>
+
+
+    <p title="program awal">di awal</p>
+    <p title="tengah program ini">di tengah ini</p>
+    <p title="akhir program">di akhir</p>
+</body>
+</html>

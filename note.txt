@@ -71,15 +71,79 @@ artinya memilih semua p yang ada setelah div dan tidak didalam tag lain lagi, ta
 
 
 ==== Attribute Selector ====
+css mendukung selector menggunakan atribut, terdapat banyak cara diantaranya
+ini semua tag yang ada atribut dipilih
+    namaTag[atribut] {color:red;}
+ini semua tag yang ada atribut dipilih dan value dipilih
+    namaTag[atribut="value"] {color:red;}
+ini semua tag yang ada atribut dipilih dan value dipilih di dalam sebuah kalimat 
+    namaTag[atribut~="value"] {color:red;}
+ini semua tag yang ada atribut dipilih dan value dipilih di dalam sebuah kalimat atau dipisah dengan -
+    namaTag[atribut|="value"] {color:red;}
+ini semua yang diawali dengan value
+    namaTag[atribut^="value"] {color:red;}
+ini semua yang diakhiri dengan value
+    namaTag[atribut$="value"] {color:red;}
+ini semua yang memiliki kata value
+    namaTag[atribut*="value"] {color:red;}
+selain dengan tag[atribut] semua itu bisa dilakukan hanya dengan atribut
+    [atribut="value"]{color: red;}
 
 
 ==== Color ====
+color merupakan rule css untuk mengubah warna, bisa digunakan pada teks
+dokumentasi lengkap https://developer.mozilla.org/en-US/docs/Web/CSS/color
+daftar nama-nama warna yang didukung web https://htmlcolorcodes.com/color-names/
 
 
 ==== Text ====
+css dapat digunakan untuk style text, contoh-contoh sebelumnya kita mengubah warna
+sebenarnya masih banyak styling lain untuk teks seperti:
+
+text-align (untuk teks alignment)
+Berikut adalah nilai text-align:
+start Meratakan teks sesuai arah penulisan 
+end Meratakan teks ke arah sebaliknya dari start
+left Teks diratakan ke kiri.
+right Teks diratakan ke kanan.
+center Teks diratakan di tengah secara horizontal.
+justify Teks diratakan di kedua sisi (kiri & kanan).
+match-parent Menyamakan perataan teks dengan elemen induk.
+
+text-decoration-* (menambah garsi dekorasi teks) // shorthand
+Berikut adalah nilai macam text-decoration
+text-decoration-line (mengatur garisnya)
+text-decoration-color (warna garisnya)
+text-decoration-style (gaya garisnya)
+text-decoration-thickness (ketebalan garisnya)
+
+text spacing
+Berikut adalah nilai macam text-decoration
+text-indent (spaces di awal)
+latter-spacing (spaces antar huruf)
+line-height (spaces antar baris)
+word-spacing (spaces antar kata)
+white-space (bagaimana spaces ditampilkan)
+
+text shadow (efek bayangan)
+text-shadow: offest-x | offest-y | blur-radius | color;
+
+masih banyak yang lain di sini
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text_decoration
 
 
 ==== Font ====
+saat membuat tulisan, biasanya Web Browser menggunakan default font atau dari OS nya
+agar konsisten, font bisa diatur dengan CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/font
+property ini termasuk shorthand atau singkatan banyak property lain diantaranya
+'font-style', 'font-variant', 'font-weight', 'font-size', 'line-height', and 'font-family'
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-family    
+font-family tergantung dengan OS, jika tidak ada di OS, maka hasilnya tidak akan sesuai dengan yang kita mau
+maka disarankan menggunakan generic
+https://www.w3.org/TR/css-fonts-3/#generic-font-families 
+font populer https://fonts.google.com/ 
 
 
 ==== Background ====
