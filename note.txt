@@ -147,24 +147,53 @@ font populer https://fonts.google.com/
 
 
 ==== Background ====
+css bisa digunakan untuk merubah background dengan atribut background
+ini juga merupakan sebuah shorthand
+https://developer.mozilla.org/en-US/docs/Web/CSS/background 
+background image akan dibahas di mater selanjutnya
+background-color akan kita pelajari disini
 
 
 ==== Box Model ====
+terdapat konsep box model yang biasanya digunakan untuk mengatur tata letak
+setiap element memiliki box yang terdiri dari content, padding, border dan margin
+margin itu transparnt dan tidak bisa diwarnai
+kita dapat mengatur size dasar dengan height dan width, kemudian mengatur ukuran
+box-box nya juga dengan atribut dan value masing-masing, seperti
+padding: top, right, bottom, left;
+border: top, right, bottom, left;
+margin: top, right, bottom, left;
+atau hanya mengisi satu nilai yang akan digunakan ke semua sisi
+atau hanya mengisi dua nilai yang akan digunakan di x dan y
+ketika dua margin saling bertemu maka akan mengambil nilai tertinggi, bukan ditambah
 
 
 ==== Debug dengan Browser ====
+jika ingin melihat box model pada halaman html kita bisa melakukan nya di menu inspect
 
 
-==== Mix dan Max Size ====
+==== Min dan Max Size ====
+untuk menjaga ukuran element tidak terlalu kecil atau terlalu besar
+kita bisa mengatur nya dengan property css
+min-height: ukurann; min-width: ukuran;
+max-height: ukurann; max-width: ukuran;
+ini berguna jika menggunakan ukuran persen agar sesuai ekspektasi
 
 
 ==== Border ====
+didalam box model terdapat border, untuk mengubah border bisa menggunakan property border
+ini adalah shorthand juga dari border-color, border-style, border-width
 
 
 ==== Outline ====
+outline mirip dengan border, berada setelah border, yang berbeda dia tidak mengambil area dari Box
+artinya tidak mengganggu layout
+singkatnya outline tidak menggeser konten tapi menelan margin
 
 
 ==== Background Image ====
+background-attachment, background-blend-mode, background-clip, background-color, background-image
+background-origin, background-position, background-position-x, background-position-y, background-repeat, background-size
 
 
 ==== Opacity ====
