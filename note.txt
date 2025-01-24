@@ -54,12 +54,13 @@ h1, h2, #title{
 }
 
 
+###
 ==== Combinator Selector ====
 adalah sesuatu yang menjelaskan relasi antar selector, terdapat 4 yaitu
 - descendant selector (memilih element anak), menggunakan spasi
 contoh div p {color: red;}
 artinya memilih p yang didalam div
-- child selector (memilih hanya element anak pertama), menggunakan >
+- child selector (memilih hanya element anak pertama tapi bukan satu), menggunakan >
 contoh div > p {color: red;}
 artinya memilih p yang didalam div dan tidak didalam tag lain lagi
 - adjacent sibling selector (memilih 1 element saudara setelahnya), menggunakan +
@@ -96,6 +97,7 @@ dokumentasi lengkap https://developer.mozilla.org/en-US/docs/Web/CSS/color
 daftar nama-nama warna yang didukung web https://htmlcolorcodes.com/color-names/
 
 
+###
 ==== Text ====
 css dapat digunakan untuk style text, contoh-contoh sebelumnya kita mengubah warna
 sebenarnya masih banyak styling lain untuk teks seperti:
@@ -192,17 +194,37 @@ singkatnya outline tidak menggeser konten tapi menelan margin
 
 
 ==== Background Image ====
+selain Color, kita juga bisa menggunakan image sebagai background
+untuk menggunakan image sebagai background kita bisa menggunakan property background-image
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
 background-attachment, background-blend-mode, background-clip, background-color, background-image
 background-origin, background-position, background-position-x, background-position-y, background-repeat, background-size
 
 
 ==== Opacity ====
+element di HTML bisa diatur transparansinya menggunakan property opacity
+ini mempengaruhi semua elemen didalamnya, termasuk background
+nilai nya dari 1 sampai 0, 1 default dan 0 transparnt sepenuhnya
 
 
 ==== Value dan Unit ====
+10px, 10 adalah value, px adalah unit
+kita menggunakan berbagai jenis value, dari mulai number, text, color name, rgb, image, dan lain-lain
+semua standarisasi dari CSS Value dan Unit sudah ditetapkan di spesifikasi berikut :
+https://drafts.csswg.org/css-values/ 
+value dan unit yang penting dimengerti adalah untuk length
+https://developer.mozilla.org/en-US/docs/Web/CSS/length
+
+###
+relative length unit (mengikuti parent)
+absolute length unit (fix atau pasti)
+interpolation ()
 
 
 ==== Writing Mode ====
+writing mode digunakan untuk menentukan cara membaringkan text, apakah ingin horizontal, atau vertical
+horizontal-tb (top bottom)
+vertical-lr (left right) dll
 
 
 ==== Overflow ====
