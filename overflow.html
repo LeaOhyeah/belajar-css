@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>writing Mode</title>
+    <title>Overflow</title>
     <style>
       body {
         padding: 0px;
@@ -20,7 +20,7 @@
         text-align: justify;
       }
       .artikel1 {
-        height: 300px;
+        height: 110px;
         background-color: aqua;
         width: 300px;
         padding: 10px 20px 10px 20px;
@@ -28,10 +28,10 @@
         border-style: solid double;
         border-width: 5px;
         border-radius: 20px;
-        writing-mode: vertical-lr;
-    }
-    
-    .artikel2 {
+        overflow: auto;
+      }
+
+      .artikel2 {
         height: 150px;
         width: 300px;
         padding: 20px;
@@ -40,17 +40,7 @@
         border-left-width: 20px;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        writing-mode: vertical-rl;
-      }
-      .artikel3 {
-        height: 300px;
-        background-color: aqua;
-        width: 300px;
-        padding: 10px 20px 10px 20px;
-        margin: 10px 10px 10px 10px;
-        border-style: dotted;
-        outline-style: solid;
-        outline-width: 20px;
+        overflow: scroll;
       }
     </style>
   </head>
@@ -60,7 +50,7 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
         rerum tempora et corrupti quae in iste libero amet? Ipsa suscipit
         quibusdam necessitatibus cumque nam veniam? Accusamus qui libero
-        provident in.
+        provident in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, ipsam vitae? Quisquam mollitia, nihil quidem voluptatem, iure incidunt accusantium ex vitae odit consequatur iste illo. Ex repudiandae soluta deleniti numquam.
       </p>
     </div>
     <div class="artikel2">
@@ -69,14 +59,6 @@
         voluptatibus possimus nobis dignissimos in laborum rerum maxime
         praesentium repudiandae tempora maiores et tempore, sapiente molestias
         nemo fugiat. Sunt, repudiandae?
-      </p>
-    </div>
-    <div class="artikel3">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
-        rerum tempora et corrupti quae in iste libero amet? Ipsa suscipit
-        quibusdam necessitatibus cumque nam veniam? Accusamus qui libero
-        provident in.
       </p>
     </div>
   </body>

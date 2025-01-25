@@ -228,24 +228,51 @@ vertical-lr (left right) dll
 
 
 ==== Overflow ====
+Overflow: kejadian dimana konten text melebihi ukuran box nya
+kita bisa menentukan bagaimana cara menampilkan ketika terjadi Overflow dengan property Overflow
+default adalah visible
 
 
 ==== Pseudo Elements ====
+Pseudo-elements selector adalah keyword untuk menambah selector ke bagian tertentu dari elemen yang terseleksi
+saat memilih Pseudo-elements kita menggunakan tanda pemisah ::
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
 
 
 ==== Pseudo Classes ====
+ini adalah keyword untuk selector yang merepresentasikan state / keadaan tertentu dari elemen yang diseleksi
+tanda pemisah nya :
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 
 
 ==== Link ====
+kita sering sekali menggunakan link menggunakan tag a
+link memiliki banyak sekali pseudo-classes yang bisa kita gunakan untuk mengubah tampilan Link pada state tertentu
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#user_action_pseudo-classes
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#location_pseudo-classes
 
 
 ==== List ====
+property untuk mengubah List
+list-style-type, mengubah jenis list https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type 
+list-style-image, mengubah item list -> gambar https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image
+list-style-position, mengubah posisi item https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image
+shortcut / shorthand list-style https://developer.mozilla.org/en-US/docs/Web/CSS/list-style 
 
 
 ==== Table ====
+table di HTML, kita akan banyak menggunakan Box Model
+mengatur border pada tabel, menggunakan border pada table, tr, th, td, dan lain-lain
+https://developer.mozilla.org/en-US/docs/Web/CSS/border 
+jika kita ingin menghilangkap jarak tiap kolom gunakan border-collapse :
+https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse 
+bisa juga tambahkan padding pada bagian-bagian tabel    
 
 
 ==== Form ====
+element input bisa diatur menggunakan Box Model di CSS
+khusus Form, terdapat pseudo-classes yang dikhususkan untuk input form :
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#input_pseudo-classes
 
 
 ==== Content ====
