@@ -6,7 +6,7 @@
 
 ==== Pengenalan CSS ====
 css ---
-css adalah bahasa berbasis rule/aturan
+css (Cascading Style Sheet) adalah bahasa berbasis rule/aturan
 kita akan mendefinisikan rule untuk element html yang kita buat
 membuat rule biasanya dengan menyebutkan nama element atau selector, kurung kurawal buka dan tutup, kemudian rule didalamnya
 rule disebutkan dengan property: value;
@@ -276,18 +276,52 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#input_pseudo-cla
 
 
 ==== Content ====
+adalah property untuk mengubah isi element, ini hanya bisa digunakan untuk konten gambar
+jika ingin mengubah konten teks maka menggunakan pseudo-elements
+https://developer.mozilla.org/en-US/docs/Web/CSS/content
 
 
 ==== Counter ====
-
+penomoran di css dapat dilakukan otomatis dengan counter https://developer.mozilla.org/en-US/docs/Web/CSS/counter
+set untuk membuat, increment untuk menaikkan, reset untuk mengulang, counter() untuk mengambil nilai sekarang
+https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set
+https://developer.mozilla.org/en-US/docs/Web/CSS/counter-increment
+https://developer.mozilla.org/en-US/docs/Web/CSS/counter-reset
 
 ==== Filter ====
+CSS bisa digunakan untuk menambahkan filter di element yang kita inginkan
+Kita bisa menggunakan property filter
+https://developer.mozilla.org/en-US/docs/Web/CSS/filter
+semua akan di filter, border, bg dll
 
 
 ==== Import ====
+sebelumnya, kita menambahkan kode CSS dari external file menggunakan tag link
+CSS juga memiliki kemampuan untuk mengambil kode CSS dari luar menggunakan At-Rule, dimana harus ditempatkan dibagian atas kode CSS
+Kita bisa mengambil kode CSS dari external menggunakan rule @import
+https://developer.mozilla.org/en-US/docs/Web/CSS/@import 
 
 
 ==== Cascade ====
+Saat kita menggunakan CSS, kita harus tahu konsep bernama Cascade (Cascading Style Sheet)
+Cascade adalah logika bagaimana web browser mengumpulkan property CSS dari berbagai sumber sebelum diterapkan ke element yang dipilih
+Web browser akan mengambil sumber property CSS dari tiga sumber, yaitu User Agent, Author dan User
+https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
+
+User Agent Stylesheet
+User Agent atau browser, biasanya memiliki nilai awal untuk stylesheet
+Tiap User Agent biasanya berbeda, oleh karena itu saat membuat CSS kita harus hati-hati dengan nilai awal User Agent, karena bisa berbeda untuk tiap browser
+Salah satu contoh yang banyak dilakukan oleh programmer web adalah, melakukan reset ke nilai kosong
+Contohnya seperti ini : https://github.com/necolas/normalize.css/blob/master/normalize.css
+
+Author Stylesheet
+Saat membuat web, kadang biasanya kita tidak langsung membuat file CSS, biasanya kita akan menggunakan stylesheet buatan orang lain, contoh yang populer adalah Bootstrap atau TailwindCSS
+https://getbootstrap.com/
+https://tailwindcss.com/ 
+Biasanya User akan melakukan import atau link untuk Author Stylesheet
+
+User Stylesheet
+User stylesheet adalah yang kita buat sendiri, biasanya dibuat untuk mengubah stylesheet yang sudah digunakan baik itu dari User Agent atau Author
 
 
 ==== Layer ====
