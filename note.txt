@@ -310,22 +310,43 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade
 
 User Agent Stylesheet
 User Agent atau browser, biasanya memiliki nilai awal untuk stylesheet
-Tiap User Agent biasanya berbeda, oleh karena itu saat membuat CSS kita harus hati-hati dengan nilai awal User Agent, karena bisa berbeda untuk tiap browser
-Salah satu contoh yang banyak dilakukan oleh programmer web adalah, melakukan reset ke nilai kosong
+Tiap User Agent biasanya berbeda, oleh karena itu saat membuat CSS kita harus hati-hati dengan nilai awal User Agent, karena bisa berbeda
+untuk tiap browser,Salah satu contoh yang banyak dilakukan oleh programmer web adalah, melakukan reset ke nilai kosong
 Contohnya seperti ini : https://github.com/necolas/normalize.css/blob/master/normalize.css
 
 Author Stylesheet
-Saat membuat web, kadang biasanya kita tidak langsung membuat file CSS, biasanya kita akan menggunakan stylesheet buatan orang lain, contoh yang populer adalah Bootstrap atau TailwindCSS
-https://getbootstrap.com/
-https://tailwindcss.com/ 
+Saat membuat web, kadang biasanya kita tidak langsung membuat file CSS, biasanya kita akan menggunakan stylesheet buatan orang lain, contoh
+yang populer adalah Bootstrap atau TailwindCSS https://getbootstrap.com/ atau https://tailwindcss.com/ 
 Biasanya User akan melakukan import atau link untuk Author Stylesheet
 
 User Stylesheet
 User stylesheet adalah yang kita buat sendiri, biasanya dibuat untuk mengubah stylesheet yang sudah digunakan baik itu dari User Agent atau Author
 
+Cascade Order
+Saat kita menggunakan sumber-sumber tadi untuk membuat CSS, Web Browser akan menggabungkan semua property CSS untuk element menggunakan urutan sebagai berikut
+- User Agent Stylesheet
+- Author Stylesheet
+- User Stylesheet
+Jika ternyata kita membuat aturan yang sama di CSS, maka urutan posisi yang paling akhir yang akan digunakan
+
+!important
+Saat kita membuat aturan CSS, semua aturan akan mendapatkan prioritas normal
+Jika kita ingin membuat sebuah aturan menjadi sangat penting, sehingga tidak boleh digantikan setelahnya oleh aturan lain, 
+maka kita bisa menambahkan !important pada aturan tersebut
+
 
 ==== Layer ====
+Masalah dengan !important
+Menggunakan !important sangat tidak flexible, karena artinya kita tidak bisa mengubah propertinya lagi
+Alternatif lain yang lebih flexible adalah menggunakan @layer
+
+@layer
+@layer adalah fitur di dalam CSS Cascade, dimana kita bisa membuat layer (seperti tumpukan), dimana posisi layer bisa diurutkan sesuai dengan yang kita mau
+Dengan menggunakan @layer, kita bisa menentukan mana yang lebih penting dan mana yang tidak begitu penting dengan mengubah posisi layer
+Dengan begitu, kita bisa mengubah-ubah posisi, tanpa harus menggunakan !important lagi
+https://developer.mozilla.org/en-US/docs/Web/CSS/@layer 
 
 
 ==== Materi Selanjutnya ====
-
+css layout
+javascript
