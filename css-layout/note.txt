@@ -1,0 +1,79 @@
+==== Pengenalan CSS Layout ====
+
+
+
+==== Membuat Project ====
+
+
+
+==== Normal Flow ====
+
+
+
+==== Display ====
+
+
+
+==== Flexbox ====
+
+
+
+==== Flex Items ====
+
+
+
+==== Flex Alignment ====
+
+
+
+==== Grids ====
+
+
+
+==== Grid Terminology ====
+
+
+
+==== Grid Templates ====
+
+
+
+==== Grid Items ====
+
+
+
+==== Grid Alignment ====
+
+
+
+==== Subgrid ====
+
+
+
+==== Multiple Column ====
+
+
+
+==== Float ====
+
+
+
+==== Positioning ====
+
+
+
+==== Fraction Unit ====
+
+
+
+==== Media Queries ====
+
+
+
+==== Display None ====
+
+
+
+==== Penutup ====
+
+
