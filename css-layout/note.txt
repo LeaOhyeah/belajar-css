@@ -1,29 +1,93 @@
 ==== Pengenalan CSS Layout ====
-
-
-
-==== Membuat Project ====
-
+Di materi CSS Dasar, kita sudah belajar bagaimana menambahkan gaya pada element-element di HTML
+Selain menambahkan gaya di element, CSS juga biasanya digunakan untuk membuat layout (tata letak) halaman web
+Hampir semua web di dunia, akan menggunakan CSS untuk melakukan layouting (tata letak) komponen-komponen HTML nya
+Salah satu tujuan melakukan tata letak adalah agar tampilan halaman web lebih menarik
 
 
 ==== Normal Flow ====
+Normal Flow adalah bagaimana Web Browser menampilkan tata letak halaman HTML secara default, ketika kita tidak mengubah apapun pada tata letak nya
+Secara default, jika kita tidak menambahkan layout CSS sama sekali, maka Web Browser akan menampilkan halaman Web dalam Normal Flow
+Biasanya setiap Web Browser hampir memiliki Normal Flow yang sama
 
+Secara default, Web Browser akan menampilkan urutan sesuai dengan posisi kode HTML yang dibuat
+Walaupun kita tambahkan Style (warna dll) menggunakan CSS pada komponen HTML nya, tetap saja, urutan nya secara default akan mengikuti urutan sesuai kode HTML yang kita buat
+
+Kenapa Tidak Cukup dengan Normal Flow?
+Untuk membuat halaman yang menarik, kadang butuh tata letak yang tidak bisa sesuai dengan Normal Flow
+Kadang kita butuh meletakkan beberapa posisi komponen ditempat yang kita inginkan, sehingga tidak bisa jika mengikuti aturan Normal Flow
+Contoh jika kita buka website www.programmerzamannow.com 
+Maka kita bisa lihat bahwa tata letak komponen tidak ditampilkan secara Normal Flow
 
 
 ==== Display ====
+Sebelum kita belajar melakukan tata letak, kita perlu bahas ulang tentang Display
+Kita tahu bahwa komponen di HTML memiliki default display, ada yang block dan ada yang inline
+Sebenarnya, kita bisa mengubah nilai display untuk komponen HTML menggunakan atribut display di CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
 
+Nilai display
+inline, artinya komponen ditampilkan secara inline (hanya mengambil tempat secukupnya)
+block, artinya komponen ditampilkan secara block (mengambil tempat kiri ke kanan komponen diatasnya)
+inline-block, artinya komponen ditampilkan secara inline, tapi kita bisa mengubah tinggi dan lebar komponennya seperti layaknya block
+none, artinya komponen akan dihapus dan tidak ditampilkan
 
 
 ==== Flexbox ====
+Flexbox Layout bertujuan untuk menyediakan cara yang lebih efisien untuk menata letak, menyelaraskan, dan mendistribusikan ruang antar item dalam wadah (container), 
+bahkan ketika ukurannya tidak diketahui dan/atau dinamis (sehingga disebut “fleksibel”).
+Flexbox Layout paling sesuai untuk komponen aplikasi, dan tata letak skala kecil, sedangkan Grid Layout ditujukan untuk tata letak skala besar.
+Grid Layout akan dibahas di materi tersendiri
 
+Flex Container
+Untuk membuat Flex Container, kita bisa menggunakan display value flex
+Semua child element yang terdapat di dalam Flex Container, maka kita sebut sebagai Flex Item
+
+Flex Direction
+Secara default, Flex Item akan ditampilkan dengan arah dari kiri ke kanan (default row), kita bisa mengubah dengan atribut flex-direction :
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction 
+
+Flex Warp
+Secara default, Flex Item akan ditampilkan dalam satu garis, baik itu vertical (row) atau horizontal (column) (default nowarp)
+Namun jika kita ingin Flex Item di wrap pada garis berbeda ketika dibutuhkan, maka kita bisa gunakan atribut flex-wrap
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
 
 
 ==== Flex Items ====
+Komponen yang terdapat di dalam Flex Container, kita sebut dengan nama Flex Item
+Selain melakukan pengaturan ke Flex Container, kita juga bisa melakukan pengaturan ke Flex Item
 
+Order
+Secara default urutan Flex Item akan ditampilkan sesuai dengan urutan kode HTML yang dibuat
+Namun, jika kita ingin mengubah urutan ditampilkannya, kita bisa menggunakan atribut order
+https://developer.mozilla.org/en-US/docs/Web/CSS/order 
+
+Flex Grow
+Atribut flex-grow mendefinisikan kemampuan item fleksibel untuk berkembang jika diperlukan. 
+Atribut flex-grow menerima nilai yang berfungsi sebagai proporsi dari total. 
+Ini menentukan jumlah ruang yang tersedia di dalam wadah fleksibel yang harus digunakan oleh item tersebut.
+Misal kita punya 5 Flex Item, dimana total dari 5 Flex Item tersebut memiliki jumlah flex-grow 20, artinya per 1 grow adalah 100% / 20 = 5%
+Sehingga Flex Item yang memiliki nilai flex-grow 2 artinya memiliki ruang sebesar 10%
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow 
+
+Flex Shrink
+Jika flex-grow merupakan kemampuan untuk Flex Item untuk berkembang, maka atribut flex-shrink untuk menyusut ketika dibutuhkan
+Biasanya kemampuan untuk menyusut dibutuhkan ketika memang ukuran halaman tidak cukup, dan kita bisa mengatur nilai factor dari penyusutannya antar Flex Item, sama seperti flex-grow
+jika flex-shrink 0 artinya tidak punya kemampuan menyusut (tidak boleh mengecil sama sekali)
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink 
+
+Flex Basis
+Atribut flex-basis digunakan untuk membuat Flex Item mengambil ruang sebesar yang ditentukan, atau jika ruangan tidak tersedia, ambil semampunya
+Jika kita menggunakan flex-shrink : 0, maka akan dipastikan bahwa Flex Item akan mengambil sejumlah flex-basis, walaupun ukuran layar tidak mencukupi
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis 
 
 
 ==== Flex Alignment ====
+Flex Item yang terdapat di dalam Flex Container, bisa kita rapikan atau selaraskan dengan beberapa atribut
 
+Justify Content
+Saat kita menggunakan Flexbox, kita bisa menggunakan atribut justify-content menentukan bagaimana Web Browser menentukan jarak antar Flex Item
+https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content 
 
 
 ==== Grids ====

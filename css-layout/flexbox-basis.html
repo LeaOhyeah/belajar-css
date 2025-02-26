@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Basis</title>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .content {
+        background-color: aqua;
+        border: 2px solid blue;
+        margin: 5px;
+        padding: 5px;
+      }
+
+      .content1 {
+       flex-shrink: 0;
+       flex-basis: 600px;
+      }
+      .content2 {
+       flex-basis: 600px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="content content1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse
+        consequuntur sunt odio, nisi assumenda quibusdam voluptatibus, nesciunt
+        maxime rerum fugiat similique minima quaerat voluptatem ea possimus
+        temporibus corporis? Tenetur.
+      </div>
+
+      <div class="content content2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse
+        consequuntur sunt odio, nisi assumenda quibusdam voluptatibus, nesciunt
+        maxime rerum fugiat similique minima quaerat voluptatem ea possimus
+        temporibus corporis? Tenetur.
+      </div>
+
+    </div>
+  </body>
+</html>
